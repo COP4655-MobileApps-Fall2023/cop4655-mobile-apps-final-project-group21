@@ -1,1 +1,7 @@
-# cop4655-mobile-apps-final-project-final-project-group21 # cop4655-mobile-apps-final-project-final-project-group21
+# Group 21 
+
+Group Members: <br>
+Jacob Goldstein<br>
+Marco Rojas<br>
+Matthew Eisenberg<br>
+Alexander Mendoza
