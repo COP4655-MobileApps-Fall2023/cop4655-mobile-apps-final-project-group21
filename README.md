@@ -82,7 +82,7 @@ TaskTracker is a task management app designed to help individuals and teams orga
 
 
 
-![](https://hackmd.io/_uploads/HkXj40HzT.png)
+![](https://github.com/COP4655-MobileApps-Fall2023/cop4655-mobile-apps-final-project-final-project-group21/blob/main/wireframe.png)
 
 
 
