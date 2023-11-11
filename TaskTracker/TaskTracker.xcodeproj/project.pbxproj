@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0677072AFEF72A00A612AA /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D0677062AFEF72A00A612AA /* ParseSwift */; };
+		1D06770A2AFEFB1000A612AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0677092AFEFB1000A612AA /* User.swift */; };
+		1D06770D2AFF06BE00A612AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06770C2AFF06BE00A612AA /* LoginViewController.swift */; };
+		1D06770F2AFF070600A612AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06770E2AFF070600A612AA /* SignUpViewController.swift */; };
 		A43A70202AF7E317001949D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A701F2AF7E317001949D9 /* AppDelegate.swift */; };
 		A43A70222AF7E317001949D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A70212AF7E317001949D9 /* SceneDelegate.swift */; };
 		A43A70242AF7E317001949D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A70232AF7E317001949D9 /* ViewController.swift */; };
@@ -36,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0677092AFEFB1000A612AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1D06770C2AFF06BE00A612AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1D06770E2AFF070600A612AA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A43A701C2AF7E317001949D9 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43A701F2AF7E317001949D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A43A70212AF7E317001949D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0677072AFEF72A00A612AA /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0677082AFEFA5B00A612AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D0677092AFEFB1000A612AA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D06770B2AFF05B900A612AA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1D06770C2AFF06BE00A612AA /* LoginViewController.swift */,
+				1D06770E2AFF070600A612AA /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A43A70132AF7E317001949D9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,8 @@
 			children = (
 				A43A701F2AF7E317001949D9 /* AppDelegate.swift */,
 				A43A70212AF7E317001949D9 /* SceneDelegate.swift */,
+				1D0677082AFEFA5B00A612AA /* Models */,
+				1D06770B2AFF05B900A612AA /* Login */,
 				A43A70232AF7E317001949D9 /* ViewController.swift */,
 				A43A70252AF7E317001949D9 /* Main.storyboard */,
 				A43A70282AF7E317001949D9 /* Assets.xcassets */,
@@ -143,6 +170,9 @@
 			dependencies = (
 			);
 			name = TaskTracker;
+			packageProductDependencies = (
+				1D0677062AFEF72A00A612AA /* ParseSwift */,
+			);
 			productName = TaskTracker;
 			productReference = A43A701C2AF7E317001949D9 /* TaskTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +245,9 @@
 				Base,
 			);
 			mainGroup = A43A70132AF7E317001949D9;
+			packageReferences = (
+				1D0677052AFEF72A00A612AA /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = A43A701D2AF7E317001949D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D06770F2AFF070600A612AA /* SignUpViewController.swift in Sources */,
+				1D06770A2AFEFB1000A612AA /* User.swift in Sources */,
 				A43A70242AF7E317001949D9 /* ViewController.swift in Sources */,
 				A43A70202AF7E317001949D9 /* AppDelegate.swift in Sources */,
+				1D06770D2AFF06BE00A612AA /* LoginViewController.swift in Sources */,
 				A43A70222AF7E317001949D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D0677052AFEF72A00A612AA /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D0677062AFEF72A00A612AA /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D0677052AFEF72A00A612AA /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A43A70142AF7E317001949D9 /* Project object */;
 }
