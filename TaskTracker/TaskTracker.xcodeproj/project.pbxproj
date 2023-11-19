@@ -11,6 +11,12 @@
 		1D06770A2AFEFB1000A612AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0677092AFEFB1000A612AA /* User.swift */; };
 		1D06770D2AFF06BE00A612AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06770C2AFF06BE00A612AA /* LoginViewController.swift */; };
 		1D06770F2AFF070600A612AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06770E2AFF070600A612AA /* SignUpViewController.swift */; };
+		3BEE1CDB2B099FA0002E9BCF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CDA2B099FA0002E9BCF /* Task.swift */; };
+		3BEE1CDE2B099FF1002E9BCF /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CDD2B099FF1002E9BCF /* TaskDetailViewController.swift */; };
+		3BEE1CE02B09A021002E9BCF /* TaskAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CDF2B09A021002E9BCF /* TaskAnnotationView.swift */; };
+		3BEE1CE32B09A0E4002E9BCF /* TaskComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CE22B09A0E4002E9BCF /* TaskComposeViewController.swift */; };
+		3BEE1CE62B09A217002E9BCF /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CE52B09A217002E9BCF /* TaskListViewController.swift */; };
+		3BEE1CE82B09A257002E9BCF /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE1CE72B09A257002E9BCF /* TaskCell.swift */; };
 		A43A70202AF7E317001949D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A701F2AF7E317001949D9 /* AppDelegate.swift */; };
 		A43A70222AF7E317001949D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A70212AF7E317001949D9 /* SceneDelegate.swift */; };
 		A43A70242AF7E317001949D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A70232AF7E317001949D9 /* ViewController.swift */; };
@@ -43,6 +49,12 @@
 		1D0677092AFEFB1000A612AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1D06770C2AFF06BE00A612AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1D06770E2AFF070600A612AA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3BEE1CDA2B099FA0002E9BCF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3BEE1CDD2B099FF1002E9BCF /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		3BEE1CDF2B09A021002E9BCF /* TaskAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAnnotationView.swift; sourceTree = "<group>"; };
+		3BEE1CE22B09A0E4002E9BCF /* TaskComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskComposeViewController.swift; sourceTree = "<group>"; };
+		3BEE1CE52B09A217002E9BCF /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		3BEE1CE72B09A257002E9BCF /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		A43A701C2AF7E317001949D9 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43A701F2AF7E317001949D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A43A70212AF7E317001949D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				1D0677092AFEFB1000A612AA /* User.swift */,
+				3BEE1CDA2B099FA0002E9BCF /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +112,32 @@
 				1D06770E2AFF070600A612AA /* SignUpViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		3BEE1CDC2B099FC7002E9BCF /* Task Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE1CDD2B099FF1002E9BCF /* TaskDetailViewController.swift */,
+				3BEE1CDF2B09A021002E9BCF /* TaskAnnotationView.swift */,
+			);
+			path = "Task Detail";
+			sourceTree = "<group>";
+		};
+		3BEE1CE12B09A074002E9BCF /* Task Compose */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE1CE22B09A0E4002E9BCF /* TaskComposeViewController.swift */,
+			);
+			path = "Task Compose";
+			sourceTree = "<group>";
+		};
+		3BEE1CE42B09A1FF002E9BCF /* Task List */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE1CE52B09A217002E9BCF /* TaskListViewController.swift */,
+				3BEE1CE72B09A257002E9BCF /* TaskCell.swift */,
+			);
+			path = "Task List";
 			sourceTree = "<group>";
 		};
 		A43A70132AF7E317001949D9 = {
@@ -124,6 +163,9 @@
 		A43A701E2AF7E317001949D9 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE1CE42B09A1FF002E9BCF /* Task List */,
+				3BEE1CE12B09A074002E9BCF /* Task Compose */,
+				3BEE1CDC2B099FC7002E9BCF /* Task Detail */,
 				A43A701F2AF7E317001949D9 /* AppDelegate.swift */,
 				A43A70212AF7E317001949D9 /* SceneDelegate.swift */,
 				1D0677082AFEFA5B00A612AA /* Models */,
@@ -292,10 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D06770F2AFF070600A612AA /* SignUpViewController.swift in Sources */,
+				3BEE1CE62B09A217002E9BCF /* TaskListViewController.swift in Sources */,
 				1D06770A2AFEFB1000A612AA /* User.swift in Sources */,
+				3BEE1CE02B09A021002E9BCF /* TaskAnnotationView.swift in Sources */,
+				3BEE1CE82B09A257002E9BCF /* TaskCell.swift in Sources */,
 				A43A70242AF7E317001949D9 /* ViewController.swift in Sources */,
+				3BEE1CE32B09A0E4002E9BCF /* TaskComposeViewController.swift in Sources */,
 				A43A70202AF7E317001949D9 /* AppDelegate.swift in Sources */,
 				1D06770D2AFF06BE00A612AA /* LoginViewController.swift in Sources */,
+				3BEE1CDB2B099FA0002E9BCF /* Task.swift in Sources */,
+				3BEE1CDE2B099FF1002E9BCF /* TaskDetailViewController.swift in Sources */,
 				A43A70222AF7E317001949D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
