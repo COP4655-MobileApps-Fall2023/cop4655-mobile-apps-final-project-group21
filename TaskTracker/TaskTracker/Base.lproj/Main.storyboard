@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="COs-wI-Juw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="COs-wI-Juw">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="c0S-gI-YkC">
             <objects>
-                <viewController id="FmB-cg-9Jg" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="FmB-cg-9Jg" customClass="LoginViewController" customModule="TaskTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37Z-na-BGO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,9 @@
                                         <rect key="frame" x="200.33333333333334" y="0.0" width="84.000000000000028" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="n3Q-Ze-UuE" kind="show" id="nL0-ev-IgR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -91,7 +94,6 @@
                     <connections>
                         <outlet property="passwordField" destination="Gk5-d9-SwU" id="LeF-TT-sjJ"/>
                         <outlet property="usernameField" destination="fu2-EC-hs6" id="Pf5-9b-rCU"/>
-                        <segue destination="n3Q-Ze-UuE" kind="show" id="wmp-qE-vSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iO-PP-hfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -207,16 +209,16 @@
         <!--Scavenger Hunt-->
         <scene sceneID="sXL-cZ-MTt">
             <objects>
-                <viewController id="a0p-HQ-CFN" customClass="TaskListViewController" customModule="hw4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a0p-HQ-CFN" customClass="TaskListViewController" customModule="TaskTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZQ8-10-uZl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pkn-1r-vMW">
-                                <rect key="frame" x="0.0" y="155" width="393" height="697"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <inset key="separatorInset" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="60" id="bnz-qF-VgJ" customClass="TaskCell" customModule="hw4" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="60" id="bnz-qF-VgJ" customClass="TaskCell" customModule="TaskTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bnz-qF-VgJ" id="8Z1-p0-tBX">
@@ -294,7 +296,7 @@
         <!--Task Detail View Controller-->
         <scene sceneID="iWl-Hf-Da5">
             <objects>
-                <viewController id="WXI-aa-1Pp" customClass="TaskDetailViewController" customModule="hw4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WXI-aa-1Pp" customClass="TaskDetailViewController" customModule="TaskTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mJM-Ow-tfy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,7 +413,7 @@
         <!--New Scavenger Hunt Item-->
         <scene sceneID="WoF-xM-wU6">
             <objects>
-                <viewController id="2lo-ui-9rC" customClass="TaskComposeViewController" customModule="hw4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2lo-ui-9rC" customClass="TaskComposeViewController" customModule="TaskTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qsh-1a-8jF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -488,10 +490,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
