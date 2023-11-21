@@ -31,11 +31,11 @@ TaskTracker is a task management app designed to help individuals and teams orga
 
 **Required Must-have Stories**
 
-* User can create a new account
-* User can login and log out
-* User can create task
-* User can mark task as complete
-* User can add a due date
+* User can create a new account   [x]
+* User can login and log out      [x]
+* User can create task            [x]
+* User can mark task as complete  [x]
+* User can add a due date         [x]
 
 **Optional Nice-to-have Stories**
 
