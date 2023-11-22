@@ -12,8 +12,7 @@ Original App Design Project - README Template
 
 ## Overview
 <div>
-   <h1> Demo </h1>
-    <a href="https://youtu.be/qZKPpGZ-y1U">
+   <h1> Demo = https://youtu.be/qZKPpGZ-y1U </h1>
   </div>
 ### Description
 TaskTracker is a task management app designed to help individuals and teams organize and prioritize their tasks and projects. It provides features such as task creation, due date tracking, progress monitoring, and collaboration tools.
